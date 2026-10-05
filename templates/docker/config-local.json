@@ -8,6 +8,9 @@
     },
     "artifactory-jcr.local": {
       "auth": "{{AUTH_PLACEHOLDER}}"
+    },
+    "host.docker.internal:80": {
+      "auth": "{{AUTH_PLACEHOLDER}}"
     }
   }
 }
