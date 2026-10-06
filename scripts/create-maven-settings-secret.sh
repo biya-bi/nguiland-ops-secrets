@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -euo pipefail
 
 script_dir=`realpath "$(dirname $0)"`
 project_dir=`realpath "${script_dir}/.."`
@@ -17,6 +17,7 @@ set_credentials() {
     local env="$1"
 	local input_xml="$2"
 	local output_xml="$3"
+	local oss_base_url="http://artifactory-oss.${env}.svc.cluster.local:8082/artifactory"
 
     local config_dir="${NGUILAND_CONFIG_DIR}/${env}/artifactory"
 
@@ -27,8 +28,11 @@ set_credentials() {
 
 	local username_xpath=$(get_credential_xpath "username")
 	local password_xpath=$(get_credential_xpath "password")
+	local rendered_template=$(mktemp)
 
-	xmlstarlet ed -u "${username_xpath}" -v "${username}" -u "${password_xpath}" -v "${password}" "${input_xml}" > "${output_xml}"
+	sed "s|{{ARTIFACTORY_OSS_BASE_URL}}|${oss_base_url}|g" "${input_xml}" > "${rendered_template}"
+	xmlstarlet ed -u "${username_xpath}" -v "${username}" -u "${password_xpath}" -v "${password}" "${rendered_template}" > "${output_xml}"
+	rm "${rendered_template}"
 }
 
 create_secret() {

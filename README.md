@@ -22,6 +22,7 @@ Maven secrets can be created using a command similar to the below:
 ```
 scripts/create-maven-settings-secret.sh <env>
 ```
+The generated Maven settings point to the Artifactory OSS Service in that environment, using its cluster-local DNS name. This allows pipeline pods in namespaces such as `cicd` to resolve Artifactory reliably.
 
 Docker secrets can be created using a command similar to the below:
 ```
