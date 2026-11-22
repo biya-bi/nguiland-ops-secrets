@@ -14,13 +14,13 @@ create_secret() {
 
     local postgres_dir="${NGUILAND_CONFIG_DIR}/${env}/postgres"
 
-    local user=$(cat "${postgres_dir}/user")
+    local username=$(cat "${postgres_dir}/username")
     local password=$(cat "${postgres_dir}/password")
     local database=$(cat "${postgres_dir}/database")
     local extra_databases=$(cat "${postgres_dir}/extra_databases")
 
     kubectl create secret generic "${secret_name}" \
-        --from-literal=user="${user}" \
+        --from-literal=username="${username}" \
         --from-literal=password="${password}" \
         --from-literal=db="${database}" \
         --from-literal=extra-dbs="${extra_databases}" \
