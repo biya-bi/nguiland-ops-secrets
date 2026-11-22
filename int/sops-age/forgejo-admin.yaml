@@ -1,0 +1,37 @@
+apiVersion: v1
+data:
+    password: ENC[AES256_GCM,data:Ii393V8a4bG7S7es,iv:9DSmLdQotQ13Z9p7e+67gzWMlXHxU6p9SyXH60f/aJw=,tag:ANkkXI9Bv9U0pGnvOXNHuQ==,type:str]
+    username: ENC[AES256_GCM,data:8gbRzIme3pPfkUQK,iv:pLMf+YxCxSyyDPiifHXBXywvW8oGfqStlq/Vmhwr7YQ=,tag:DwWWyufQqGgeSoqovtOf9w==,type:str]
+kind: Secret
+metadata:
+    name: forgejo-admin
+    namespace: int
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1mqtfy7qnvac57dm6dp3k6w3cf2m367gx502d6nl8fykv847u0gnssgkcpy
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB0LzJIT1J1MGJ3OWFDdlkw
+            WUpham90VkhNUWhQTWQ5bTd6MGlrV0IzSm53Cjk2R1FTZVp2a3J5UU52elliNzY0
+            WEkremVFelZhMVM0M3BMY3VQa3c2b0UKLS0tIGszYnRtb3B1THkzeTJiMUQzT2ls
+            MENCbk4yQXNnTktWUmV4SDBZdHRWd0kK99lpN9REhT4HaASQPoOuEMhxvYAAg/nT
+            oP9617q+JlbJASy6IF4Ub13eyDozFX9XVK9hXVYRE83UlDwhEJIrww==
+            -----END AGE ENCRYPTED FILE-----
+        - recipient: age17p0tpa9akvns84dy28jaujch4z3qrzltr6x9s7l5frdussrdnqqszcv9hc
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBWOXhHTEY1aXdCSGlNNTVm
+            TElDUHhsdlBFaUJDSndwbkF3cE03NEdBRWxFClV1UnB4NHRkOUtrenVpdkdBWDJU
+            d09IZTZ3MTZLVGpWSThZMHZaUFJEc1EKLS0tIHYyUkVKbEtQcFVNZ2l0ZnJsR2lQ
+            ZjVYcU5VdWlYMmtGNjY2VUQvRlpSdU0KPGiZfpgcq9jH9qw/BNijw5zQqC/Z6A9A
+            ewrjTu4buuch89HGhJWgsJWDFvfbtPbNNgAiyjegfF1suZc2W3tZLQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2026-11-22T17:49:51Z"
+    mac: ENC[AES256_GCM,data:bfY+BmlRpNc0ZHK2jUWV3+D7POmFJ1wjm2o1jFvlj/eTvsQlwFkT+ktVljNEwImG4uGFpW3mSgb0j6edlIe8AOcyDzDFm2LIXRM+g7bAdsr8ZokCTcujSsCSXS735+RIKNZ23W1XFoV4QGuGRzF7aKu3DENe33B1YiXhdmfiLBg=,iv:PuQ/uZCt5sLCv8LjdNn3DaRmkudlA5NoK0ei0okdW0Q=,tag:VBMG5fL4Oipoja/LS5613A==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.0
