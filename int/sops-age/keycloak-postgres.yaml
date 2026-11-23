@@ -1,0 +1,43 @@
+apiVersion: v1
+data:
+    database: ENC[AES256_GCM,data:PPcpdI9ELeq54GLG,iv:5Rjd0dBD0dFZWZMTcMiyYfySGPavyIv3paeuVR8W8fs=,tag:pfBfVuWO26sqW2lN+q+r4g==,type:str]
+    host: ENC[AES256_GCM,data:vXxHu/+ptL3E5OgAWGtEO22X4D5j7PQG,iv:eRw+2798s5wylLAXu0ZdKJ6QUIAmtiwtcr2gplQE3bU=,tag:DFTHH/L90K1avoo0gCZ/Yg==,type:str]
+    password: ENC[AES256_GCM,data:6PVdsJGZjUAJjtiG,iv:Tdx4ckI34+WUcGBUYqASgGOgIukXa7JioreugCtvAOI=,tag:aXx80nSWgb12rjUEdpzBvg==,type:str]
+    type: ENC[AES256_GCM,data:p5Xyffqnm0z7FnZ9,iv:RNfrhcMsZ3AvOCoNFlsXSO2cGifqFYXet95tW1HcFs8=,tag:H9q6yqFadYROlCyChrE7NA==,type:str]
+    username: ENC[AES256_GCM,data:34Gc7y1UpaAHR1mG,iv:4zI+1GEB3XIUnIsqg3owYcyGeQnj3nG4qVKMlIOUWKU=,tag:NiqeVljHMoKxVk/KM/zyMg==,type:str]
+kind: Secret
+metadata:
+    labels:
+        postgres-provisioner.io/instance: main
+        postgres-provisioner.io/managed: "true"
+    name: keycloak-postgres
+    namespace: int
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1mqtfy7qnvac57dm6dp3k6w3cf2m367gx502d6nl8fykv847u0gnssgkcpy
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpZHZ4UUdOSmMweVJjTlRm
+            MVVKdzZoa1hISHdseERCWm93U0tjSEhhcUVJCmJ0Z3JwRlYzRnJPazRNL0FIRjJx
+            RGpXMkdPTXlId2lCYk5GaUJHM1NmaW8KLS0tIHNFNzRhUm4vdDYreENkejd4RFVE
+            S0N2N1lDb25LYit3dFlic2NHM3h2NnMKouEwvDYLgaKvjvHyFp2bunQoKTO206Dy
+            d2WHyOGy+5hJjmNU379ppTdp4RhoOG5Pp9+4TvzpqyOo4YAPg1E+XA==
+            -----END AGE ENCRYPTED FILE-----
+        - recipient: age17p0tpa9akvns84dy28jaujch4z3qrzltr6x9s7l5frdussrdnqqszcv9hc
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA3dG9CdEhjMTFqKzlmZkZp
+            ZGlrd0VIVTlYeURjUHZWWUl4NG5UZzdRMEI4CmFDK1JBcnhLV09FS0pndmZ1a2Zx
+            WnB1dDhFMVN1YWpJekZVQzRxRFhMR2MKLS0tIFBVQU94Mndlb0lEMXBta3A0c25l
+            WnlUdHh5TlJNUlZYc3I5dzNFM1RiSGMKjyrdygVoogEOT2s5u9J0scFszOe40G8a
+            ot2bVYRgP8bg88jUEmSUkblqKdosixJOEU2FmTS/AGxyjgXgP0c6eQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2026-11-23T08:42:37Z"
+    mac: ENC[AES256_GCM,data:7TeO5BA6CAjA+h0Iuo34nXZLz2l4eZkd98c0p7fYaDFPMciWInlx4nxMeYem+lW0ai8XUar5kT+DRqdHP79Jy0UCS1dPP0LXbioo7PtCSJ0JlqCkwSN7NF2EOL4oA0q5jjja423h4oJF7TOGOOvpuBRdHIR5W3MS5xBaG0XGotA=,iv:5mQisyRfuHEMFdxga8cx/JCSS90zGFz8i2KNwhZp6zc=,tag:5FyxmtY4mlhajyr6DhBaNQ==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.0

@@ -1,0 +1,43 @@
+apiVersion: v1
+data:
+    database: ENC[AES256_GCM,data:GuSixrcFfTr0/YQF,iv:6FatJSfoxELYcCgVjWLa+Wz16HhDdZfd79tv3Zm5U48=,tag:kHP4YYC9wCDsCCr4l6JaUw==,type:str]
+    host: ENC[AES256_GCM,data:fxSmSnMKwwSnDW/4NAmKzGc/FMSoISYo,iv:leHzVKjvKL6jqeeWJob9gNr9doiqQfcLW3BT1lIl2QU=,tag:EAO6oalcxe56BlbnpNfkkA==,type:str]
+    password: ENC[AES256_GCM,data:o7zfNzWVzu6bKyPc,iv:u5BEXxJdsJENmK6BPTmDhEomqapDxZGLQR/+jHTAEhk=,tag:LHchyEyCZnmVJmpwvEeRrg==,type:str]
+    type: ENC[AES256_GCM,data:oBOHXVs5szH/JK2Q,iv:T4O/hJQcEqj8RCQMQyANIfaIUELJuU+V8q1WTj5wEyk=,tag:DceBNK56M9zXg0C7wKtTgQ==,type:str]
+    username: ENC[AES256_GCM,data:xpesNiEKQ9K0oN4b,iv:8mLoIMbzG6senBEJytx7H/xMrnPJSixT9ceh45zKdh0=,tag:lxIfZp+bv4umHdvlTF/pLg==,type:str]
+kind: Secret
+metadata:
+    labels:
+        postgres-provisioner.io/instance: main
+        postgres-provisioner.io/managed: "true"
+    name: keycloak-postgres
+    namespace: local
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1mqtfy7qnvac57dm6dp3k6w3cf2m367gx502d6nl8fykv847u0gnssgkcpy
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBhVmVXNFVFQ0VlRFJNRmd2
+            K3hQZEllOVVkQXVxc0lDN3pCQ29waFhyMkZzCnVjWUtwOU5YNTRLU1duMkV6Z2Z4
+            ZXRQTi9DTnBXRTYzK3RweGQrWFBzZWMKLS0tIHNwQlJZcVV6NGFnM080aVAwMHdX
+            STJEUGNldFpleUdmWE85V2h5UlhJcTgKRh5roUZH+wJlPbBwA56ddjkS1BVme76C
+            by4X+lvO9pmMa2tCPXmY8A7h7lgJkpaEn6gzl5oxq8234iBjwUifzQ==
+            -----END AGE ENCRYPTED FILE-----
+        - recipient: age17p0tpa9akvns84dy28jaujch4z3qrzltr6x9s7l5frdussrdnqqszcv9hc
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCaExoL2lTZndTS3BZb3Aw
+            SWlhN0ZzeVRFbUlnb1dqUmo5YXJ4RDI5TWhnCmlqQ3JiMWdiMmlxaHJOT0FVYkVp
+            YVNrdGY0SXpQb0lEQ0IvTlE4b09uVzQKLS0tIDlLbzFzUHA5OURoV2h2M0t0VktM
+            L0lmTjAxWnd3eWdIam9tc3FHdzJic3cK3abWL/2umujT7UOoILKEnFF5rudTVqqx
+            H2UyXY48UvGOIWHLQxRVvUdMAZdiVqvUaJR1zfTRV3AvGUr3rXjTxg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2026-11-23T08:41:02Z"
+    mac: ENC[AES256_GCM,data:xtw3LHInWmCNEmzYP/rKKbLxdtmsi3hlUMsPveC+4sl6BkOc4+0Inavdi3Ao1AWTUk5MGCvp7UvZy2JD4p33CB/IO8tCiofv3plxt7n+kGsJITL+b8mgcG5+GmrKrKCFZog/noqHOiZ+e4UqUXFVr4VEFeumgoOUoZW3wuGlR64=,iv:tuc4ctC9OeG+gQ5oB+FTItPx0rHOr0V7vEcQwhmvyCQ=,tag:CEF4Ey0KnmKenolza0+0ew==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.0
