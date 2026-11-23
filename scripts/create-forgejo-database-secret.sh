@@ -5,11 +5,11 @@ set -eu
 script_dir=`realpath "$(dirname $0)"`
 project_dir=`realpath "${script_dir}/.."`
 
-secret_name="forgejo-database"
-
 create_secret() {
     local env="$1"
     local database_type="$2"
+
+    local secret_name="forgejo-${database_type}"
 
     local secret_yaml="${project_dir}/${env}/sops-age/${secret_name}.yaml"
 

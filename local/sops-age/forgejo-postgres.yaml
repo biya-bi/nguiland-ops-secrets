@@ -1,0 +1,43 @@
+apiVersion: v1
+data:
+    database: ENC[AES256_GCM,data:IKSpn/jnD/eZG/Gr,iv:y7vLTK9+p3t4ViG4gDttEhne3IlFvDBVqqCcgNsXsw8=,tag:3Og3qTnEWg92veIWDu8xcA==,type:str]
+    host: ENC[AES256_GCM,data:ugIhtWS3g7HcAXCttKsZYmNSMERPR1F0,iv:zqf5ypQ7p7ZZPKEWsABi1Wyt7OBY+QvSoQt7DzxuO4k=,tag:yzKYrfsUF3td6aoV7MJf7Q==,type:str]
+    password: ENC[AES256_GCM,data:hkyu1tQqNtm15q1y,iv:xdTGhkfxgQI/PCDcjoCNh8/tiNlI5WDoIaoKr63V2TA=,tag:sRtwYKSukU/Q0LWTLZe/7w==,type:str]
+    type: ENC[AES256_GCM,data:hroeMlslx/Qapnst,iv:I6vjQ4VC8OoriTC5Nf7NraBRnRTh3CiiuWxOfsHCDqw=,tag:krr2jDCcUhA33rfxQ96lWg==,type:str]
+    username: ENC[AES256_GCM,data:Emme1J6i1iiyXzmF,iv:tfajzjgbLRRwatXEe92JTY/FMul4zaQ95SUGkuDzI5Q=,tag:7siR5V5dazuyUTaEpFnhAw==,type:str]
+kind: Secret
+metadata:
+    labels:
+        postgres-provisioner.io/instance: main
+        postgres-provisioner.io/managed: "true"
+    name: forgejo-postgres
+    namespace: local
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1mqtfy7qnvac57dm6dp3k6w3cf2m367gx502d6nl8fykv847u0gnssgkcpy
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB5VThpd0dwK1ZLWFFqcXZn
+            QWd3RXY3VzJNVWhxMi9GV1ZWMU1uci8rUUdJCktCWjlVeVNNQVZHck4zVis2cVUw
+            dzlKWW1QUFB4eks0SmhJdlJrem9RZUkKLS0tIE83NlJMRUNyN0d3S09GT1JaYTJM
+            RktFYkQ1cStpK05IWkdiVHVjUTQxR2sK/RFVAugcnbLmd4GAxWNGcM5oHYicwq8r
+            chFbw6HQ/Z2PZmfzIPyGVhb7dM43t85kljW+bCqb2C1SnM/jTyRF9A==
+            -----END AGE ENCRYPTED FILE-----
+        - recipient: age17p0tpa9akvns84dy28jaujch4z3qrzltr6x9s7l5frdussrdnqqszcv9hc
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBKM1pHZGVpSzQzb1Y2SEhm
+            OE12TWZBRWlCR0Nqci9rWEFIK3czV1lTT3dJCmdIVi9Bb0xmTUxzOE4rMlZ0V0Ns
+            M3VEbTEvWksvQTU2ZnhpTFNPVFd1bUUKLS0tIEY5WkN4T2kzODZwY1JuRXZHSXVy
+            cC96WW5vN2swZnhXSE9RNCtMazcxaTQK+DUpgyJZ5K2JNTiElHol3VniUds98jJB
+            boQvJGUJ6QXj9SLtDUOquDAvq1AQFvGcoowsJZMoJ636+JJTxo8Q8w==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2026-11-23T08:59:54Z"
+    mac: ENC[AES256_GCM,data:8uJzOXpMKAakG8jpnF3Q5TU7FId/J3WNCPIp6DC0kFLYUXSXLmgFv9JlfGiabs0qIhrV75duv68h9R+8CbRzOhzHtwpBZvxdxbNbShTb/oqWOWzpLQ9EFbcqcSqY8lGoWc8kVUOH8wpFlYRpC/ieFsrc4rw9Rej25ybice7eZT0=,iv:dSJg1ac3mXWJXLlikayMCeMeC4ICgy4Qoq7nzrnbCKY=,tag:rvwoc2aJybXH2ag+9Y26tg==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.0

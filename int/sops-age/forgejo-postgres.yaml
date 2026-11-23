@@ -1,0 +1,43 @@
+apiVersion: v1
+data:
+    database: ENC[AES256_GCM,data:rdZL0jLydJgmNsaY,iv:tKwauZGdgHjT+WA+3eVix5LE+7M+UKiy/UAiwFjgu2g=,tag:4DPIUpKr51jx8OodNFjTvg==,type:str]
+    host: ENC[AES256_GCM,data:fqs9/1Swb1867lGxwYaHvm+MCwqgRVoU,iv:fdnnhchGWQUtyu5cwjK2excEnPp7k+ugKEkKwo/x95Q=,tag:jOXzqqtNcy1HzWJIbq3r/A==,type:str]
+    password: ENC[AES256_GCM,data:A2NNJgHcJE3jCHFM,iv:g9jf6fW+dZt1+Bift/uMn+/PFvk8BXfpS1VGh2ca+8Y=,tag:fAFuYmyVsj3YGuPw0XeA6g==,type:str]
+    type: ENC[AES256_GCM,data:XCQXV/KAd0k6gZER,iv:45e+G99yDJ/fSqFgIadidyIwl9QPWTxVXYHHMCsI9vA=,tag:pTcCSqxZE7gvUv3tQGyM4A==,type:str]
+    username: ENC[AES256_GCM,data:oIOFFMmdjv+3d8HS,iv:QKZ6rey3iNQHvUyd2h2HA3eV2/OCRECcNYRhLHhts0E=,tag:zOE9PUmQ2zjJdq85i+Qm3g==,type:str]
+kind: Secret
+metadata:
+    labels:
+        postgres-provisioner.io/instance: main
+        postgres-provisioner.io/managed: "true"
+    name: forgejo-postgres
+    namespace: int
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1mqtfy7qnvac57dm6dp3k6w3cf2m367gx502d6nl8fykv847u0gnssgkcpy
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBtMnZYdyt2bjY4blREQ0FB
+            VWVnV3Mva1ZqMkUwMlVmV2g2K0M5L0NmZzJZClVnbGdrOGhxc3QzVzFFVUVxSUR3
+            NGtkc3l3ZTZHRUk5aEJ5Q2c3M2dybVEKLS0tIGNnZEN3djFkMThOZlJpSVRvSXNE
+            RDNONE15WHpZQ0R5c0lkUUJDRlF0elEKiivjcoSO0tR5gYsY5p1A3R4R62Pg2EYa
+            uSEz5/4B9Kqikoy63GXZFpGxVhCN6YjDtD9yWbOht69N0e3re7h8xw==
+            -----END AGE ENCRYPTED FILE-----
+        - recipient: age17p0tpa9akvns84dy28jaujch4z3qrzltr6x9s7l5frdussrdnqqszcv9hc
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBtajJ1QkRwaTg2WWVkMisx
+            WThkaHFYa2l3bi83bnlqN1RlQTFWS3RTUGswCnhDdnMrRW1nTzh3eXQ1Z1gzL0JP
+            MzVkK3krS2lGMGdtWkdva0hsUWFTQzQKLS0tIE5ZNS9yaS9GR1FBV1NMdjg1TEhC
+            eUtMVHR4WnRkTUhSRDVSTGo1azg3NUEKdSJiiJd3DTgcSFrs8CsYPUjWiz5PC7K5
+            Xg7At/tUFCTz1WgwCBycwgyegysiNQK8jQwgRAzpR2cAnsK+KuV5TA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2026-11-23T09:00:12Z"
+    mac: ENC[AES256_GCM,data:pBRbitLmerIkZReyVhy3LOFrhYTFKrxiOJASsjln9PITU/3/R1a/oquQYwSTEX/tTQ7P1Ak4Bhx96hORikQOxY+vg7Ced7DmqWHFywuvYjVJj55KmV1/v+88kJ8o+1zzkQjIyf58LM4bve0tJjjyp4tNmMveqbdEK+bLPn+SIuE=,iv:WJb5+iZY+HOzvobRNfP83Xc1PXClyrKdC86rv7f2EJ4=,tag:5q8CveLZUYqBzsbXYIQkkA==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.0
