@@ -1,0 +1,37 @@
+apiVersion: v1
+data:
+    password: ENC[AES256_GCM,data:nHvba9wKOxi49qYI,iv:wWjO/zR0EncKOmn8VkD7tj1YtBuhCYueuQpWYuVueqo=,tag:k94AhsHQzyFJgSQ3L6Sgug==,type:str]
+    username: ENC[AES256_GCM,data:ArSIUs1lDOMGPyIA,iv:VZ97gKH8bsXIh/x1HYYTQ0h3s5elIk1vz8cxNc3ySfg=,tag:Qcn3Vn28cG762+YzOdkZrA==,type:str]
+kind: Secret
+metadata:
+    name: keycloak-admin
+    namespace: local
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1mqtfy7qnvac57dm6dp3k6w3cf2m367gx502d6nl8fykv847u0gnssgkcpy
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBtS0dFRXNJa0VWMjhPNHJ2
+            ejZrUi95QzNKdDlVZHdpYlhPVDkwQmxaN0RzCjZrK3ZEUTFvdmhDaURaVzJNZFQ1
+            bFdZQnpvMW15aTU3eGM3WmgvVks3cEkKLS0tIHBvTWRJWHExRk1sR1FjUzVyM2pW
+            ZmlOVEtjN1pSK2tKellPcDdxS2N1SncKGDwJnfkph328d4fPYhptudM5aFkNSOa1
+            kgnZBCrYn0eP3dtPWivnnm/rLycvpBdJ+kFrukFLz+4YPwgm2i+A0A==
+            -----END AGE ENCRYPTED FILE-----
+        - recipient: age17p0tpa9akvns84dy28jaujch4z3qrzltr6x9s7l5frdussrdnqqszcv9hc
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBoRjJBbTluSXVZZXA3ZHg1
+            WG5Zc2FncHQvcXFncmx5eE1vL284ZWdxR2lFClhJK1VmK0s5TVhUdUhYeGVOTHU4
+            bzhKbmZIaDFxaGpaemxBTzBDY3JkRmcKLS0tIFhZaUxEc1RpVXduc2xQdkQyNE1r
+            REhtenQ1MzlLQk4wVmVob1ZpOVBWMDAKZs4RJ/nVgcWZOo9L2TlwChFGSgGmNniG
+            KNmTjImtzQPG/qpRh/NctOH/Yh+bFJdHBnmL4hb0FB9caDDkupy+XQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2026-11-23T09:41:16Z"
+    mac: ENC[AES256_GCM,data:gBQWom8sK2GqrAvXjj7gBW84brEoP3z7JLkNuFIkfJTgofeXrCpegYi74+nmKy/XxVr7mUyxLxIvPgY9xynhdpSZ1ZfbxtOTHo320GYCQqFu1xMc0stOdYampCQuOfMZbvURT56slS6F7xmfQ/tWXbB3DIC8qpeVm+DjcjhES7U=,iv:nfGUm80nZUHeaUcYzTQHNIasPV14VX2ihHFlv10cMHo=,tag:k3kc9d1yAvNfe6DkNt4wRg==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.0
